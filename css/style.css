@@ -1,0 +1,786 @@
+/* & Start Global variables */
+:root {
+  --main-color: rgb(0, 49, 155);
+}
+/* & End Global variables */
+/* & Start Global Rules */
+* {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  padding: 50px;
+}
+.container {
+  padding: 50px;
+}
+/* & End Global Rules */
+/* & Start Header */
+header {
+  display: flex;
+  gap: 20px;
+  justify-content: flex-start;
+  align-items: center;
+}
+/* & End Header */
+
+/* & Start Main  */
+main {
+  margin-top: 30px;
+  padding-left: 40px;
+  padding-right: 30px;
+  width: 100%;
+  min-height: 50vh;
+  border: 2px solid var(--main-color);
+  position: relative;
+}
+main::before {
+  content: "";
+  height: calc(100% - 70px);
+  width: 2px;
+  position: absolute;
+  top: 0;
+  left: 40px;
+  background-color: var(--main-color);
+}
+main::after {
+  content: "VENDOR'S USE ONLY";
+  position: absolute;
+  top: 525px;
+  left: -60px;
+  color: var(--main-color);
+  font-weight: bold;
+  transform: rotate(270deg);
+  -webkit-transform: rotate(270deg);
+  -moz-transform: rotate(270deg);
+  -ms-transform: rotate(270deg);
+  -o-transform: rotate(270deg);
+}
+/* & End Main */
+/* & Start Form */
+/* & Start inputs */
+main .inputs {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+  margin-top: 15px;
+  padding-left: 5px;
+}
+main .inputs .input {
+  display: flex;
+  position: relative;
+}
+main .inputs .input label {
+  font-weight: bold;
+  color: var(--main-color);
+  letter-spacing: 2px;
+}
+main .inputs .input input[type="text"] {
+  flex: 1;
+  border: none;
+  border-bottom: 2px solid var(--main-color);
+  cursor: default;
+  caret-color: var(--main-color);
+  z-index: 1;
+  background-color: transparent;
+}
+main .inputs .input input[type="text"]:focus {
+  outline: none;
+}
+main .inputs .input .arabic {
+  display: block;
+  right: 0;
+  color: var(--main-color);
+  font-weight: bold;
+  direction: rtl;
+  position: absolute;
+  top: 0;
+}
+/* & End Inputs */
+/* & Start Check Lists */
+main .check-lists {
+  display: flex;
+  margin-top: 30px;
+  padding-left: 5px;
+}
+main .check-lists > p {
+  flex-basis: 50%;
+  color: var(--main-color);
+  font-weight: bold;
+}
+main .check-lists .lists {
+  margin-bottom: 10px;
+}
+main .check-lists .lists .check {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+main .check-lists .lists .list-1 {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+main .check-lists .lists .list-2 {
+  color: var(--main-color);
+  font-weight: bold;
+}
+main .check-lists .lists .list-2 > p {
+  color: var(--main-color);
+  font-weight: bold;
+  margin-bottom: 15px;
+  margin-left: 10px;
+}
+main .check-lists .lists .check span {
+  width: 18px;
+  height: 18px;
+  border: 1px solid var(--main-color);
+}
+main .check-lists .lists .check .text p {
+  color: var(--main-color);
+  font-weight: bold;
+}
+/* & End Check Lists */
+/* & Start Table */
+main .table {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(14, 1fr);
+  min-height: 50vh;
+  position: relative;
+}
+main .table::after {
+  content: "S.ARAMCO'S USE Only";
+  position: absolute;
+  bottom: 150px;
+  left: -110px;
+  color: var(--main-color);
+  font-weight: bold;
+  transform: rotate(270deg);
+  -webkit-transform: rotate(270deg);
+  -moz-transform: rotate(270deg);
+  -ms-transform: rotate(270deg);
+  -o-transform: rotate(270deg);
+}
+main .table .box-1 {
+  border: 1px solid var(--main-color);
+  grid-column: 1 / span 1;
+  grid-row: 1 / span 1;
+  padding: 15px;
+  text-align: center;
+  color: var(--main-color);
+  font-weight: bold;
+}
+main .table .box-2 {
+  border: 1px solid var(--main-color);
+  grid-column: 2 / span 7;
+  grid-row: 1 / span 1;
+  padding: 15px;
+  text-align: center;
+  color: var(--main-color);
+  font-weight: bold;
+}
+main .table .box-3 {
+  border: 1px solid var(--main-color);
+  grid-column: 9 / span 1;
+  grid-row: 1 / span 1;
+  padding: 15px;
+  text-align: center;
+  color: var(--main-color);
+  font-weight: bold;
+}
+main .table .box-4 {
+  border: 1px solid var(--main-color);
+  grid-column: 10 / span 1;
+  grid-row: 1 / span 1;
+  padding: 15px;
+  text-align: center;
+  color: var(--main-color);
+  font-weight: bold;
+}
+main .table .box-5 {
+  border: 1px solid var(--main-color);
+  grid-column: 11 / span 2;
+  grid-row: 1 / span 1;
+  padding: 15px;
+  text-align: center;
+  color: var(--main-color);
+  font-weight: bold;
+}
+main .table .box-6 {
+  border: 1px solid var(--main-color);
+  grid-column: 1 / span 1;
+  grid-row: 2 / span 9;
+}
+main .table .box-7 {
+  border: 1px solid var(--main-color);
+  grid-column: 2 / span 7;
+  grid-row: 2 / span 9;
+}
+main .table .box-8 {
+  border: 1px solid var(--main-color);
+  grid-column: 9 / span 1;
+  grid-row: 2 / span 6;
+}
+main .table .box-9 {
+  border: 1px solid var(--main-color);
+  grid-column: 10 / span 1;
+  grid-row: 2 / span 6;
+  position: relative;
+}
+main .table .box-9::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 2px;
+  background-color: var(--main-color);
+  top: 0;
+  right: 35px;
+}
+main .table .box-10 {
+  border: 1px solid var(--main-color);
+  grid-column: 11 / span 2;
+  grid-row: 2 / span 6;
+  position: relative;
+}
+main .table .box-10::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 2px;
+  background-color: var(--main-color);
+  top: 0;
+  right: 50px;
+}
+main .table .box-11 {
+  border: 1px solid var(--main-color);
+  grid-column: 9 / span 2;
+  grid-row: 8 / span 3;
+}
+main .table .box-11 div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-bottom: 2px solid var(--main-color);
+  height: calc(100% / 3);
+}
+main .table .box-11 div p {
+  color: var(--main-color);
+  padding: 3px;
+  direction: rtl;
+}
+main .table .box-12 {
+  border: 1px solid var(--main-color);
+  grid-column: 11 / span 2;
+  grid-row: 8 / span 3;
+  position: relative;
+}
+main .table .box-12 div {
+  border-bottom: 2px solid var(--main-color);
+  height: calc(100% / 3);
+}
+main .table .box-12::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 2px;
+  background-color: var(--main-color);
+  top: 0;
+  right: 50px;
+}
+main .table .box-13 {
+  grid-column: 1 / span 12;
+  display: flex;
+  gap: 5px;
+  flex-direction: column;
+  grid-row: 11 / span 1;
+  border: 1px solid var(--main-color);
+  padding: 15px;
+}
+main .table .box-13 .text {
+  text-align: center;
+  width: fit-content;
+}
+main .table .box-13 p {
+  color: var(--main-color);
+  font-weight: bold;
+}
+main .table .box-14 {
+  border: 1px solid var(--main-color);
+  grid-column: 1 / span 12;
+  grid-row: 12 / span 1;
+  display: flex;
+  justify-content: space-between;
+}
+main .table .box-14 .job {
+  flex-basis: 50%;
+  padding: 15px 50px;
+  position: relative;
+  display: flex;
+}
+main .table .box-14 .job p:nth-child(1) {
+  padding-left: 20px;
+}
+main .table .box-14 .job:before {
+  content: "";
+  position: absolute;
+  top: 65%;
+  right: 0;
+  height: 1px;
+  width: 50%;
+  background-color: var(--main-color);
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+}
+main .table .box-14 div p {
+  color: var(--main-color);
+  font-weight: 900;
+  margin-bottom: 5px;
+}
+main .table .box-14 input[type="text"] {
+  width: 100%;
+  height: 30px;
+  border: none;
+  font-size: 20px;
+  caret-color: var(--main-color);
+  color: var(--main-color);
+  margin-left: 80px;
+}
+main .table .box-14 input[type="text"]:focus {
+  outline: none;
+  font-size: 20px;
+  color: var(--main-color);
+}
+main .table .box-15 {
+  grid-column: 1 / span 12;
+  grid-row: 13 / span 1;
+  border: 1px solid var(--main-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--main-color);
+  font-weight: 500;
+}
+main .table .box-16 {
+  border: 1px solid var(--main-color);
+  grid-column: 1 / span 6;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  color: var(--main-color);
+}
+main .table .box-16 input[type="text"] {
+  width: 100%;
+  height: 30px;
+  border: none;
+  font-size: 20px;
+  caret-color: var(--main-color);
+  color: var(--main-color);
+}
+main .table .box-16 input[type="text"]:focus {
+  outline: none;
+  font-size: 20px;
+  color: var(--main-color);
+}
+main .table .box-17 {
+  grid-column: 7 / span 3;
+  border: 1px solid var(--main-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--main-color);
+  font-weight: 300;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+main .table .box-17 input[type="text"] {
+  width: 100%;
+  height: 30px;
+  border: none;
+  font-size: 20px;
+  caret-color: var(--main-color);
+  color: var(--main-color);
+}
+main .table .box-17 input[type="text"]:focus {
+  outline: none;
+  font-size: 20px;
+  color: var(--main-color);
+}
+main .table .box-18 {
+  grid-column: 10 / span 3;
+  border: 1px solid var(--main-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--main-color);
+  font-weight: 300;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+main .table .box-18 input[type="text"] {
+  width: 100%;
+  height: 30px;
+  border: none;
+  font-size: 20px;
+  caret-color: var(--main-color);
+  color: var(--main-color);
+}
+main .table .box-18 input[type="text"]:focus {
+  outline: none;
+  font-size: 20px;
+  color: var(--main-color);
+}
+main .table .box-19 {
+  grid-column: 1 / span 6;
+  border: 1px solid var(--main-color);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding: 15px;
+}
+main .table .box-19 input[type="text"] {
+  width: 100%;
+  height: 30px;
+  border: none;
+  font-size: 20px;
+  caret-color: var(--main-color);
+  color: var(--main-color);
+}
+main .table .box-19 input[type="text"]:focus {
+  outline: none;
+  font-size: 20px;
+  color: var(--main-color);
+}
+main .table .box-19 .box {
+  background-color: rgb(95 113 149 / 43%);
+  align-self: center;
+  width: 100%;
+  margin-top: 5px;
+  border: 1px solid #777;
+  border-radius: 2px;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -o-border-radius: 2px;
+}
+main .table .box-19 .box p {
+  text-align: center;
+  color: var(--main-color);
+}
+main .table .box-20 {
+  grid-column: 7 / span 3;
+  border: 1px solid var(--main-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--main-color);
+  font-weight: 300;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+main .table .box-20 input[type="text"] {
+  width: 100%;
+  height: 30px;
+  border: none;
+  font-size: 20px;
+  caret-color: var(--main-color);
+  color: var(--main-color);
+}
+main .table .box-20 input[type="text"]:focus {
+  outline: none;
+  font-size: 20px;
+  color: var(--main-color);
+}
+main .table .box-21 {
+  grid-column: 10 / span 3;
+  border: 1px solid var(--main-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--main-color);
+  font-weight: 300;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+main .table .box-21 input[type="text"] {
+  width: 100%;
+  height: 30px;
+  border: none;
+  font-size: 20px;
+  caret-color: var(--main-color);
+  color: var(--main-color);
+}
+main .table .box-21 input[type="text"]:focus {
+  outline: none;
+  font-size: 20px;
+  color: var(--main-color);
+}
+main .table .box-21 p {
+  width: 100px;
+}
+main .table .box-21 p:nth-of-type(2) {
+  direction: rtl;
+}
+main .table .box-22 {
+  grid-column: 1 / span 6;
+  border: 1px solid var(--main-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  color: var(--main-color);
+}
+main .table .box-22 input[type="text"] {
+  width: 100%;
+  height: 30px;
+  border: none;
+  font-size: 20px;
+  caret-color: var(--main-color);
+  color: var(--main-color);
+}
+main .table .box-22 input[type="text"]:focus {
+  outline: none;
+  font-size: 20px;
+  color: var(--main-color);
+}
+main .table .box-23 {
+  grid-column: 7 / span 3;
+  border: 1px solid var(--main-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--main-color);
+  font-weight: 300;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+main .table .box-23 input[type="text"] {
+  width: 100%;
+  height: 30px;
+  border: none;
+  font-size: 20px;
+  caret-color: var(--main-color);
+  color: var(--main-color);
+}
+main .table .box-23 input[type="text"]:focus {
+  outline: none;
+  font-size: 20px;
+  color: var(--main-color);
+}
+main .table .box-24 {
+  grid-column: 10 / span 3;
+  border: 1px solid var(--main-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--main-color);
+  font-weight: 300;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+main .table .box-24 input[type="text"] {
+  width: 100%;
+  height: 30px;
+  border: none;
+  font-size: 20px;
+  caret-color: var(--main-color);
+  color: var(--main-color);
+}
+main .table .box-24 input[type="text"]:focus {
+  outline: none;
+  font-size: 20px;
+  color: var(--main-color);
+}
+main .table .box-25 {
+  grid-column: 1 / span 6;
+  border: 1px solid var(--main-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  color: var(--main-color);
+}
+main .table .box-25 input[type="text"] {
+  width: 100%;
+  height: 30px;
+  border: none;
+  font-size: 20px;
+  caret-color: var(--main-color);
+  color: var(--main-color);
+}
+main .table .box-25 input[type="text"]:focus {
+  outline: none;
+  font-size: 20px;
+  color: var(--main-color);
+}
+main .table .box-26 {
+  grid-column: 7 / span 3;
+  border: 1px solid var(--main-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--main-color);
+  font-weight: 300;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+main .table .box-26 input[type="text"] {
+  width: 100%;
+  height: 30px;
+  border: none;
+  font-size: 20px;
+  caret-color: var(--main-color);
+  color: var(--main-color);
+}
+main .table .box-26 input[type="text"]:focus {
+  outline: none;
+  font-size: 20px;
+  color: var(--main-color);
+}
+main .table .box-27 {
+  grid-column: 10 / span 3;
+  border: 1px solid var(--main-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--main-color);
+  font-weight: 300;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+main .table .box-27 input[type="text"] {
+  width: 100%;
+  height: 30px;
+  border: none;
+  font-size: 20px;
+  caret-color: var(--main-color);
+  color: var(--main-color);
+}
+main .table .box-27 input[type="text"]:focus {
+  outline: none;
+  font-size: 20px;
+  color: var(--main-color);
+}
+main .table .box-28 {
+  grid-column: 1 / span 4;
+  border: 1px solid var(--main-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  color: var(--main-color);
+  border-left: none;
+  border-bottom: none;
+}
+main .table .box-28 input[type="text"] {
+  width: 100%;
+  height: 30px;
+  border: none;
+  font-size: 20px;
+  caret-color: var(--main-color);
+  color: var(--main-color);
+}
+main .table .box-28 input[type="text"]:focus {
+  outline: none;
+  font-size: 20px;
+  color: var(--main-color);
+}
+main .table .box-29 {
+  grid-column: 5 / span 2;
+  border: 1px solid var(--main-color);
+  color: var(--main-color);
+  border-bottom: none;
+  padding: 15px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main .table .box-29 input[type="text"] {
+  width: 100%;
+  height: 30px;
+  border: none;
+  font-size: 20px;
+  caret-color: var(--main-color);
+  color: var(--main-color);
+}
+main .table .box-29 input[type="text"]:focus {
+  outline: none;
+  font-size: 20px;
+  color: var(--main-color);
+}
+main .table .box-30 {
+  grid-column: 7 / span 6;
+  border: 1px solid var(--main-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--main-color);
+  font-weight: 300;
+  padding: 15px;
+  border-bottom: none;
+}
+main .table .box-30 input[type="text"] {
+  width: 100%;
+  height: 30px;
+  border: none;
+  font-size: 20px;
+  caret-color: var(--main-color);
+  color: var(--main-color);
+}
+main .table .box-30 input[type="text"]:focus {
+  outline: none;
+  font-size: 20px;
+  color: var(--main-color);
+}
+/* & End Table */
+/* & End Form  */
+/* & Start Adress */
+.address {
+  margin-top: 30px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+}
+.address .arabic {
+  direction: rtl;
+  margin-bottom: 10px;
+  width: fit-content;
+  font-size: 25px;
+}
+.address .english {
+  width: fit-content;
+  font-size: 23px;
+}
+.address::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: var(--main-color);
+  bottom: -10px;
+  display: block;
+}
+/* & End Adress */
+/* & Start Footer */
+.footer {
+}
+.footer p {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 25px;
+}
+/* & End Footer */
